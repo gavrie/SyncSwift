@@ -1,17 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "rclone.svg",
+      "filename" : "rclone-1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "rclone 1.svg",
+      "filename" : "rclone-2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "rclone 2.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }
