@@ -1,6 +1,5 @@
 import Cocoa
 
-
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
@@ -12,16 +11,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
 
         constructMenu()
+
+        // Hide the dock icon and prevent the app from appearing in the Dock or App Switcher
+        NSApp.setActivationPolicy(.accessory)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
-//    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
-//        return true
-//    }
-
     
     func constructMenu() {
         menu.addItem(NSMenuItem(title: "Sync", action: #selector(doSync), keyEquivalent: "s"))
